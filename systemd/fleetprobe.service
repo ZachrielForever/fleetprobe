@@ -1,0 +1,7 @@
+# ~/.config/systemd/user/fleetprobe.service
+[Unit]
+Description=Fleet status probe
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /home/zachriel/gameservers/probe/fleetprobe.py
